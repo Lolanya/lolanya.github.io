@@ -67,6 +67,10 @@ ul {
     flex-direction: column;
   }
 
+  .hide {
+    display: none;
+  }
+
   .btn {
     font-size: large;
     font-weight: bold;
