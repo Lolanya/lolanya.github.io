@@ -39,6 +39,7 @@ function startQuiz(){
     answerOneBtn.onclick = () => {
 
         currentAnswer =  parseInt(questions[currentQuestion].answers[0].nextQuestion);
+       // clearButtons();
         progressQuiz();
 
     }
@@ -58,6 +59,7 @@ function progressQuiz(){
     answerOneBtn.innerHTML = questions[currentQuestion].answers[0].option;
     answerOneBtn.onclick = () => {
         currentAnswer =  parseInt(questions[currentQuestion].answers[0].nextQuestion);
+        //clearButtons();
         progressQuiz();
 
     }
@@ -66,6 +68,19 @@ function progressQuiz(){
         currentAnswer =  parseInt(questions[currentQuestion].answers[1].nextQuestion);
         progressQuiz();
     }
+}
+
+function clearButtons(){
+    //let totalAnswer = questions[currentQuestion].answers.length;
+    for (let i = 1; i<2; i++){
+        document.getElementById(i).style.display = 'none';
+    }
+
+
+
+
+
+   
 }
 
 startQuiz();
