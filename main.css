@@ -29,7 +29,6 @@ ul {
   }
   
   
-  
   li a {
     display: block;
     color: white;
@@ -66,7 +65,9 @@ ul {
     align-items: center;
     flex-direction: column;
   }
-
+  .btn-option {
+    display: none;
+  }
   .btn {
     font-size: large;
     font-weight: bold;
