@@ -1,11 +1,8 @@
-:root {
-    --green: #00FF00;
-    --white: #ffffff;
-    --black: #000000;
-}
+
 * {
-    color: var(--fontColor);
+    color: black;
     font-family: helvetica;
+    font-weight: bolder;
   }
   body {
       background: var(--bg);
@@ -15,35 +12,17 @@
     text-align: center;
   }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-    border-right:1px solid #bbb;
-  }
-  
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
   
   .active {
     background-color: #04AA6D;
   }
+  .background {
+    background-image: url("Images/Background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
   .container {
     position: absolute;
@@ -54,11 +33,13 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #ef9614;
     border: 5px solid #FFFF00;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
   }
+  
   .quiz {
     display:flex;
     justify-content: center;
@@ -71,7 +52,7 @@ ul {
   .btn {
     font-size: large;
     font-weight: bold;
-    background:#ef9614;
+    background:orangered;
     border-radius: 4px;
     padding: 10px;
     color: beige;
@@ -82,36 +63,13 @@ ul {
     color:black;
   }
   .inputs {
-    padding: 10px;
-    order:3;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
-  .controls {
-    padding:10px;
-    order: 4;
-  }
-  .btn-theme{
-    outline-style: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
-  }
-
-  .light-theme {
-    --bg: var(--white);
-    --fontColor: var(--black);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);
+  .navigation {
+    display: flex;
   }
   
-  .dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--white);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
-  }

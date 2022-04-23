@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class = "background" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +7,15 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body class="light-theme">
+<body>
     <h1>Class Quiz</h1>
-    <ul>
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="Wiki.html">Wiki</a></li>
-        <li><a href="Quiz.html">Quiz</a></li>
-
-    </ul>
-    <div>
-        <button class="btn-theme">Dark</button>
-    </div>
     <div class="container">
         <div class = "quiz">
+            
             <div id="questions">Test</div>
-            <div id="inputs">
+            <img id="image">
+            <div id="description"></div>
+            <div class="inputs">
                 <button class="btn btn-option" id="1"></button>
                 <button class="btn btn-option" id="2"></button>
                 <button class="btn btn-option" id="3"></button>
@@ -31,7 +25,6 @@
 
         <div class="navigation">
             <button class="btn btn-restart" id="restart">Restart</button>
-            <button class="btn btn-prev" id="prev">Previous</button>
         </div>
     </div>
     <script src="app.js"></script>
